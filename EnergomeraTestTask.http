@@ -1,0 +1,29 @@
+@baseUrl = https://localhost:7143
+
+###  Получить все поля
+GET {{baseUrl}}/fields
+Accept: application/json
+
+###
+
+###  Получить площадь поля по ID
+GET {{baseUrl}}/fields/field-001/size
+Accept: application/json
+
+###
+
+###  Расстояние до точки от центра поля
+GET {{baseUrl}}/fields/field-001/distance?lat=45.0210&lng=42.0120
+Accept: application/json
+
+###
+
+###  Проверка принадлежности точки
+GET {{baseUrl}}/fields/contains?lat=45.0200&lng=42.0128
+Accept: application/json
+
+###
+
+### Перезагрузка KML-файлов
+POST {{baseUrl}}/fields/reload
+Accept: application/json
