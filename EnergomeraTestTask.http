@@ -1,4 +1,4 @@
-@baseUrl = http://localhost:8276
+@baseUrl = https://localhost:7143
 
 ###  Получить все поля
 GET {{baseUrl}}/fields
